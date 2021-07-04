@@ -1,0 +1,31 @@
+<mat-card>
+    <nav mat-tab-nav-bar mat-align-tabs="center">
+      <a
+        mat-tab-link
+        (click)="mode$.next('signin')"
+        [active]="(mode$ | async) === 'signin'"
+      >
+        Accedi
+      </a>
+      <a
+        mat-tab-link
+        (click)="mode$.next('signup')"
+        [active]="(mode$ | async) === 'signup'"
+      >
+        Registrati
+      </a>
+    </nav>
+
+    <mdg-signin
+      *ngIf="(mode$ | async) === 'signin'"
+      [disabled]="(status$ | async) === 'pending'"
+      (signIn)="signIn$.next($event)"
+    ></mdg-signin>
+
+    <mdg-signup
+      *ngIf="(mode$ | async) === 'signup'"
+      [disabled]="(status$ | async) === 'pending'"
+      (signUp)="signUp$.next($event)"
+    ></mdg-signup>
+
+  </mat-card>
