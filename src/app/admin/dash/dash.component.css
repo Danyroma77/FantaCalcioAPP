@@ -1,0 +1,33 @@
+.sidenav-style {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width:  auto;
+    height: auto;
+}
+
+.sidenav-content {
+    width: 100%;
+    height: auto;
+}
+
+.sidenav-side {
+    height: max-content;
+   min-height: fit-content;
+}
+
+.home-container {
+   
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .home-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-sidenav {
+    padding: 20px;
+  }

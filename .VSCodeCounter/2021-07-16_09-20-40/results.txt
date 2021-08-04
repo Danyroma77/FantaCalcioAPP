@@ -1,0 +1,248 @@
+Date : 2021-07-16 09:20:40
+Directory : c:\my file\sviluppo\FE_2021\fantacalcio
+Total : 170 files,  18395 codes, 168 comments, 711 blanks, all 19274 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JSON       |          8 |     15,576 |         25 |          7 |     15,608 |
+| TypeScript |         91 |      1,987 |        115 |        549 |      2,651 |
+| HTML       |         34 |        533 |         13 |        104 |        650 |
+| CSS        |         34 |        219 |          3 |         33 |        255 |
+| JavaScript |          2 |         66 |         12 |          4 |         82 |
+| Markdown   |          1 |         14 |          0 |         14 |         28 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                                    | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                                       |        170 |     18,395 |        168 |        711 |     19,274 |
+| e2e                                                                                                                     |          4 |         68 |          8 |         11 |         87 |
+| e2e\src                                                                                                                 |          2 |         27 |          1 |          8 |         36 |
+| src                                                                                                                     |        157 |      2,712 |        130 |        678 |      3,520 |
+| src\app                                                                                                                 |        150 |      2,648 |         55 |        652 |      3,355 |
+| src\app\_helpers                                                                                                        |          1 |         21 |          0 |          7 |         28 |
+| src\app\admin                                                                                                           |         72 |      1,182 |          8 |        330 |      1,520 |
+| src\app\admin\bonus-manager                                                                                             |          4 |        113 |          0 |         31 |        144 |
+| src\app\admin\dash                                                                                                      |          4 |         73 |          2 |         17 |         92 |
+| src\app\admin\grades-manager                                                                                            |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\log-manager                                                                                               |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\message-admin                                                                                             |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\panel                                                                                                     |         36 |        571 |          5 |        156 |        732 |
+| src\app\admin\panel\add-team                                                                                            |          4 |         98 |          4 |         20 |        122 |
+| src\app\admin\panel\manage-calendar                                                                                     |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\panel\modifier-add                                                                                        |          4 |        116 |          0 |         26 |        142 |
+| src\app\admin\panel\modifier-config                                                                                     |          4 |         60 |          0 |         21 |         81 |
+| src\app\admin\panel\modifier-edit                                                                                       |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\panel\seasonadd                                                                                           |          4 |         91 |          1 |         16 |        108 |
+| src\app\admin\panel\seasonedit                                                                                          |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\panel\team-full-list                                                                                      |          4 |         67 |          0 |         19 |         86 |
+| src\app\admin\panel\upload-calendar-file                                                                                |          4 |         43 |          0 |         15 |         58 |
+| src\app\admin\players-manager                                                                                           |          4 |         32 |          0 |         13 |         45 |
+| src\app\admin\season-manager                                                                                            |          4 |        138 |          1 |         33 |        172 |
+| src\app\admin\teams-manager                                                                                             |          4 |        127 |          0 |         28 |        155 |
+| src\app\admin\users-manager                                                                                             |          4 |         32 |          0 |         13 |         45 |
+| src\app\core                                                                                                            |          4 |         36 |          0 |         16 |         52 |
+| src\app\core\landing                                                                                                    |          4 |         36 |          0 |         16 |         52 |
+| src\app\land                                                                                                            |         20 |        238 |          0 |         79 |        317 |
+| src\app\land\admin                                                                                                      |          4 |         68 |          0 |         17 |         85 |
+| src\app\land\league                                                                                                     |          4 |         43 |          0 |         15 |         58 |
+| src\app\land\message                                                                                                    |          4 |         59 |          0 |         20 |         79 |
+| src\app\land\results                                                                                                    |          4 |         34 |          0 |         13 |         47 |
+| src\app\land\training                                                                                                   |          4 |         34 |          0 |         14 |         48 |
+| src\app\league                                                                                                          |          4 |         32 |          0 |         13 |         45 |
+| src\app\league\panel                                                                                                    |          4 |         32 |          0 |         13 |         45 |
+| src\app\league\panel\leaguenew                                                                                          |          4 |         32 |          0 |         13 |         45 |
+| src\app\models                                                                                                          |          4 |         35 |          0 |          5 |         40 |
+| src\app\services                                                                                                        |          7 |        188 |          0 |         59 |        247 |
+| src\app\ui                                                                                                              |         12 |        161 |         10 |         47 |        218 |
+| src\app\ui\footer                                                                                                       |          4 |         52 |          6 |         17 |         75 |
+| src\app\ui\header                                                                                                       |          4 |         34 |          0 |         13 |         47 |
+| src\app\ui\navbar                                                                                                       |          4 |         75 |          4 |         17 |         96 |
+| src\app\user                                                                                                            |         16 |        510 |         33 |         65 |        608 |
+| src\app\user\login                                                                                                      |          4 |        124 |         27 |         22 |        173 |
+| src\app\user\signin                                                                                                     |          4 |        147 |          1 |         15 |        163 |
+| src\app\user\signup                                                                                                     |          4 |        179 |          5 |         17 |        201 |
+| src\app\user\status                                                                                                     |          4 |         60 |          0 |         11 |         71 |
+| src\app\utils                                                                                                           |          3 |         26 |          3 |          4 |         33 |
+| src\environments                                                                                                        |          2 |          8 |         11 |          4 |         23 |
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                                                | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| c:\my file\sviluppo\FE_2021\fantacalcio\README.md                                                                       | Markdown   |         14 |          0 |         14 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\angular.json                                                                    | JSON       |        109 |         21 |          0 |        130 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\e2e\protractor.conf.js                                                          | JavaScript |         29 |          6 |          2 |         37 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\e2e\src\app.e2e-spec.ts                                                         | TypeScript |         18 |          1 |          5 |         24 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\e2e\src\app.po.ts                                                               | TypeScript |          9 |          0 |          3 |         12 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\e2e\tsconfig.json                                                               | JSON       |         12 |          1 |          1 |         14 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\karma.conf.js                                                                   | JavaScript |         37 |          6 |          2 |         45 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\package-lock.json                                                               | JSON       |     15,201 |          0 |          1 |     15,202 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\package.json                                                                    | JSON       |         49 |          0 |          1 |         50 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\_helpers\auth.interceptor.ts                                            | TypeScript |         21 |          0 |          7 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\bonus-manager\bonus-manager.component.css                         | CSS        |          7 |          0 |          2 |          9 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\bonus-manager\bonus-manager.component.html                        | HTML       |         29 |          0 |          4 |         33 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\bonus-manager\bonus-manager.component.spec.ts                     | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\bonus-manager\bonus-manager.component.ts                          | TypeScript |         57 |          0 |         19 |         76 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\dash\dash.component.css                                           | CSS        |         15 |          0 |          2 |         17 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\dash\dash.component.html                                          | HTML       |         27 |          2 |          4 |         33 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\dash\dash.component.spec.ts                                       | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\dash\dash.component.ts                                            | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\grades-manager\grades-manager.component.css                       | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\grades-manager\grades-manager.component.html                      | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\grades-manager\grades-manager.component.spec.ts                   | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\grades-manager\grades-manager.component.ts                        | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\log-manager\log-manager.component.css                             | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\log-manager\log-manager.component.html                            | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\log-manager\log-manager.component.spec.ts                         | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\log-manager\log-manager.component.ts                              | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\message-admin\message-admin.component.css                         | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\message-admin\message-admin.component.html                        | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\message-admin\message-admin.component.spec.ts                     | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\message-admin\message-admin.component.ts                          | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\add-team\add-team.component.css                             | CSS        |         26 |          0 |          2 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\add-team\add-team.component.html                            | HTML       |         16 |          0 |          4 |         20 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\add-team\add-team.component.spec.ts                         | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\add-team\add-team.component.ts                              | TypeScript |         36 |          4 |          8 |         48 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\manage-calendar\manage-calendar.component.css               | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\manage-calendar\manage-calendar.component.html              | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\manage-calendar\manage-calendar.component.spec.ts           | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\manage-calendar\manage-calendar.component.ts                | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-add\modifier-add.component.css                     | CSS        |         26 |          0 |          2 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-add\modifier-add.component.html                    | HTML       |         24 |          0 |          5 |         29 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-add\modifier-add.component.spec.ts                 | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-add\modifier-add.component.ts                      | TypeScript |         46 |          0 |         13 |         59 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-config\modifier-config.component.css               | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-config\modifier-config.component.html              | HTML       |         15 |          0 |          5 |         20 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-config\modifier-config.component.spec.ts           | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-config\modifier-config.component.ts                | TypeScript |         25 |          0 |          9 |         34 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-edit\modifier-edit.component.css                   | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-edit\modifier-edit.component.html                  | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-edit\modifier-edit.component.spec.ts               | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\modifier-edit\modifier-edit.component.ts                    | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonadd\seasonadd.component.css                           | CSS        |          4 |          0 |          0 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonadd\seasonadd.component.html                          | HTML       |         28 |          0 |          3 |         31 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonadd\seasonadd.component.spec.ts                       | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonadd\seasonadd.component.ts                            | TypeScript |         39 |          1 |          7 |         47 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonedit\seasonedit.component.css                         | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonedit\seasonedit.component.html                        | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonedit\seasonedit.component.spec.ts                     | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\seasonedit\seasonedit.component.ts                          | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\team-full-list\team-full-list.component.css                 | CSS        |          3 |          0 |          0 |          3 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\team-full-list\team-full-list.component.html                | HTML       |         22 |          0 |          6 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\team-full-list\team-full-list.component.spec.ts             | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\team-full-list\team-full-list.component.ts                  | TypeScript |         22 |          0 |          7 |         29 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\upload-calendar-file\upload-calendar-file.component.css     | CSS        |          4 |          0 |          0 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\upload-calendar-file\upload-calendar-file.component.html    | HTML       |          3 |          0 |          4 |          7 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\upload-calendar-file\upload-calendar-file.component.spec.ts | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\panel\upload-calendar-file\upload-calendar-file.component.ts      | TypeScript |         16 |          0 |          5 |         21 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\players-manager\players-manager.component.css                     | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\players-manager\players-manager.component.html                    | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\players-manager\players-manager.component.spec.ts                 | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\players-manager\players-manager.component.ts                      | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\season-manager\season-manager.component.css                       | CSS        |          6 |          0 |          2 |          8 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\season-manager\season-manager.component.html                      | HTML       |         52 |          1 |         10 |         63 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\season-manager\season-manager.component.spec.ts                   | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\season-manager\season-manager.component.ts                        | TypeScript |         60 |          0 |         15 |         75 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\teams-manager\teams-manager.component.css                         | CSS        |         10 |          0 |          2 |         12 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\teams-manager\teams-manager.component.html                        | HTML       |         42 |          0 |          9 |         51 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\teams-manager\teams-manager.component.spec.ts                     | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\teams-manager\teams-manager.component.ts                          | TypeScript |         55 |          0 |         11 |         66 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\users-manager\users-manager.component.css                         | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\users-manager\users-manager.component.html                        | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\users-manager\users-manager.component.spec.ts                     | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\admin\users-manager\users-manager.component.ts                          | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app-routing.module.ts                                                   | TypeScript |         33 |          0 |          3 |         36 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app.component.css                                                       | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app.component.html                                                      | HTML       |          4 |          0 |          3 |          7 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app.component.spec.ts                                                   | TypeScript |         31 |          0 |          5 |         36 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app.component.ts                                                        | TypeScript |          9 |          0 |          2 |         11 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\app.module.ts                                                           | TypeScript |         69 |          0 |          8 |         77 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\core\landing\landing.component.css                                      | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\core\landing\landing.component.html                                     | HTML       |          5 |          0 |          4 |          9 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\core\landing\landing.component.spec.ts                                  | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\core\landing\landing.component.ts                                       | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\admin\admin.component.css                                          | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\admin\admin.component.html                                         | HTML       |         13 |          0 |          0 |         13 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\admin\admin.component.spec.ts                                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\admin\admin.component.ts                                           | TypeScript |         35 |          0 |         10 |         45 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\league\league.component.css                                        | CSS        |          4 |          0 |          0 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\league\league.component.html                                       | HTML       |          7 |          0 |          4 |         11 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\league\league.component.spec.ts                                    | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\league\league.component.ts                                         | TypeScript |         12 |          0 |          5 |         17 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\message\message.component.css                                      | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\message\message.component.html                                     | HTML       |         12 |          0 |          4 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\message\message.component.spec.ts                                  | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\message\message.component.ts                                       | TypeScript |         27 |          0 |          9 |         36 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\results\results.component.css                                      | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\results\results.component.html                                     | HTML       |          3 |          0 |          1 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\results\results.component.spec.ts                                  | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\results\results.component.ts                                       | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\training\training.component.css                                    | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\training\training.component.html                                   | HTML       |          3 |          0 |          2 |          5 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\training\training.component.spec.ts                                | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\land\training\training.component.ts                                     | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\league\panel\leaguenew\leaguenew.component.css                          | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\league\panel\leaguenew\leaguenew.component.html                         | HTML       |          1 |          0 |          1 |          2 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\league\panel\leaguenew\leaguenew.component.spec.ts                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\league\panel\leaguenew\leaguenew.component.ts                           | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\material.module.ts                                                      | TypeScript |         73 |          1 |          5 |         79 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\models\auth.ts                                                          | TypeScript |          8 |          0 |          2 |         10 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\models\login.ts                                                         | TypeScript |         15 |          0 |          3 |         18 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\models\modifier.ts                                                      | TypeScript |          4 |          0 |          0 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\models\season.ts                                                        | TypeScript |          8 |          0 |          0 |          8 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\auth.service.ts                                                | TypeScript |         37 |          0 |          8 |         45 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\message-site.service.ts                                        | TypeScript |         16 |          0 |          6 |         22 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\modifier.service.ts                                            | TypeScript |         36 |          0 |         14 |         50 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\roleplayers.service.ts                                         | TypeScript |         13 |          0 |          4 |         17 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\season.service.ts                                              | TypeScript |         29 |          0 |          7 |         36 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\teams.service.ts                                               | TypeScript |         31 |          0 |          8 |         39 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\services\token-storage.service.ts                                       | TypeScript |         26 |          0 |         12 |         38 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\footer\footer.component.css                                          | CSS        |          5 |          0 |          0 |          5 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\footer\footer.component.html                                         | HTML       |         16 |          6 |          6 |         28 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\footer\footer.component.spec.ts                                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\footer\footer.component.ts                                           | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\header\header.component.css                                          | CSS        |          0 |          0 |          1 |          1 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\header\header.component.html                                         | HTML       |          3 |          0 |          1 |          4 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\header\header.component.spec.ts                                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\header\header.component.ts                                           | TypeScript |         11 |          0 |          5 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\navbar\navbar.component.css                                          | CSS        |          3 |          2 |          0 |          5 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\navbar\navbar.component.html                                         | HTML       |         23 |          2 |          5 |         30 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\navbar\navbar.component.spec.ts                                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\ui\navbar\navbar.component.ts                                           | TypeScript |         29 |          0 |          6 |         35 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\login\login.component.css                                          | CSS        |         14 |          0 |          0 |         14 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\login\login.component.html                                         | HTML       |         28 |          0 |          4 |         32 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\login\login.component.spec.ts                                      | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\login\login.component.ts                                           | TypeScript |         62 |         27 |         12 |        101 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signin\signin.component.css                                        | CSS        |         29 |          0 |          0 |         29 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signin\signin.component.html                                       | HTML       |         54 |          0 |          2 |         56 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signin\signin.component.spec.ts                                    | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signin\signin.component.ts                                         | TypeScript |         44 |          1 |          7 |         52 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signup\signup.component.css                                        | CSS        |         30 |          0 |          1 |         31 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signup\signup.component.html                                       | HTML       |         74 |          0 |          0 |         74 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signup\signup.component.spec.ts                                    | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\signup\signup.component.ts                                         | TypeScript |         55 |          5 |         10 |         70 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\status\status.component.css                                        | CSS        |         22 |          0 |          0 |         22 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\status\status.component.html                                       | HTML       |          5 |          0 |          1 |          6 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\status\status.component.spec.ts                                    | TypeScript |         20 |          0 |          6 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\user\status\status.component.ts                                         | TypeScript |         13 |          0 |          4 |         17 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\utils\equal-fields.validator.ts                                         | TypeScript |         10 |          3 |          2 |         15 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\utils\registration-error-state.matcher.ts                               | TypeScript |         10 |          0 |          2 |         12 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\app\utils\utils.fn.ts                                                       | TypeScript |          6 |          0 |          0 |          6 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\environments\environment.prod.ts                                            | TypeScript |          4 |          0 |          1 |          5 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\environments\environment.ts                                                 | TypeScript |          4 |         11 |          3 |         18 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\index.html                                                                  | HTML       |         16 |          2 |          4 |         22 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\main.ts                                                                     | TypeScript |         10 |          0 |          3 |         13 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\polyfills.ts                                                                | TypeScript |          1 |         57 |          8 |         66 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\styles.css                                                                  | CSS        |         11 |          1 |          3 |         15 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\src\test.ts                                                                     | TypeScript |         18 |          4 |          4 |         26 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\tsconfig.app.json                                                               | JSON       |         14 |          1 |          1 |         16 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\tsconfig.json                                                                   | JSON       |         22 |          1 |          1 |         24 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\tsconfig.spec.json                                                              | JSON       |         17 |          1 |          1 |         19 |
+| c:\my file\sviluppo\FE_2021\fantacalcio\tslint.json                                                                     | JSON       |        152 |          0 |          1 |        153 |
+| Total                                                                                                                   |            |     18,395 |        168 |        711 |     19,274 |
++-------------------------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

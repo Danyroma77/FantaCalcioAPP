@@ -1,0 +1,18 @@
+<mat-drawer-container class="home-container" autosize>
+    <mat-drawer #drawer class="home-sidenav" mode="side" opened>
+        <button mat-button routerLink="/landing">
+            <mat-icon>home</mat-icon>
+          </button>
+        <mat-divider></mat-divider>
+        <a href="#" mat-raised-button color="primary" routerLink='dashleague'>Leghe</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-raised-button color="primary" routerLink='searchleague'>Cerca Leghe</a>
+    </mat-drawer>
+
+
+    <h4>Gioca</h4>
+    <!--     Corpo della sezione-->
+    <router-outlet></router-outlet>
+
+
+</mat-drawer-container>

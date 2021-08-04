@@ -1,0 +1,85 @@
+<h4 mat-dialog-title>Gestione Configurazione</h4>
+
+    <mat-label>Modificatore in Aggiornamento => {{modifierInfo$?.description}} - {{modifierInfo$?.roleplayers}}</mat-label>
+
+    <form [formGroup]="fConfig" (ngSubmit)="save()">
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>
+                Da
+            </mat-label>
+            <input matInput type="number" formControlName="gradesStart">
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>
+                A
+            </mat-label>
+            <input matInput type="number" formControlName="gradesEnd">
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>
+                Punti Squadra
+            </mat-label>
+            <input type="number" matInput formControlName="pointMy">
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>
+                Punti Avversario
+            </mat-label>
+            <input type="number" matInput formControlName="pointOther">
+        </mat-form-field>
+        
+            <button mat-raised-button color="primary">Salva</button>
+        
+    </form>
+    <table mat-table [dataSource]="configInfo$">
+
+        <ng-container matColumnDef="index">
+            <th mat-header-cell *matHeaderCellDef> #ID </th>
+            <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="gradesStart">
+            <th mat-header-cell *matHeaderCellDef> Voto Da </th>
+            <td mat-cell *matCellDef="let element"> {{element.gradesStart}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="gradesEnd">
+            <th mat-header-cell *matHeaderCellDef> Voto A </th>
+            <td mat-cell *matCellDef="let element">
+                        {{element.gradesEnd}}
+                 </td>
+        </ng-container>
+        <ng-container matColumnDef="pointMy">
+            <th mat-header-cell *matHeaderCellDef> punti per squadra </th>
+            <td mat-cell *matCellDef="let element">
+                        {{element.pointMy}}
+                 </td>
+        </ng-container>
+        <ng-container matColumnDef="pointOther">
+            <th mat-header-cell *matHeaderCellDef> punti per altra </th>
+            <td mat-cell *matCellDef="let element">
+                        {{element.pointOther}}
+                 </td>
+        </ng-container>
+        <ng-container matColumnDef="function">
+            <th mat-header-cell *matHeaderCellDef>Funzioni</th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-raised-button color="warn" (click)="delete(element)">Elimina</button>
+            </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+
+<mat-card-actions>
+    
+    <button mat-button mat-dialog-close>Chiudi</button>
+</mat-card-actions>
+
+<div class="status-box" [ngSwitch]="status">
+    <mat-spinner *ngSwitchCase="'pending'" [diameter]="20"></mat-spinner>
+    <div *ngSwitchCase="'error'" class="status error">{{message}}</div>
+    <div *ngSwitchCase="'success'" class="status success">{{message}}</div>
+  </div>

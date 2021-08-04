@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MessageSiteService } from 'src/app/services/message-site.service';
+import { TokenStorageService } from 'src/app/services/token-storage.service';
 
 @Component({
   selector: 'mdg-message',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MessageComponent implements OnInit {
 
-  constructor() { }
+  lastMessage$: any;
+  userInfo: any;
+
+  constructor(private messageService: MessageSiteService,
+      private tokenService: TokenStorageService
+    ) {
+
+   }
 
   ngOnInit(): void {
+    this.userInfo = this.tokenService.getUser();
+    this.loadMessage();
+  }
+
+  loadMessage(): void {
+      this.messageService.getMessageHome(this.userInfo.id).pipe()
+          .subscribe(
+                (data) =>  this.lastMessage$ = data,
+                (error) => console.log('ERR ' + error.message.error)
+                );
+
   }
 
 }

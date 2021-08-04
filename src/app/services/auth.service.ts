@@ -1,10 +1,9 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, of, timer } from 'rxjs';
-import { switchMap } from 'rxjs/operators';
+import { BehaviorSubject, Observable, of, timer } from 'rxjs';
+import { switchMap, map } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
-import { Credentials } from '../models/login';
-import {UserSignup,Role} from '../models/login';
+import { Auth } from '../models/auth';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
@@ -14,19 +13,17 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class AuthService {
+  auth$ : BehaviorSubject<Auth> = new BehaviorSubject<Auth>(null);
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    this.auth$.next(JSON.parse(sessionStorage.getItem('auth-user')));
+   }
 
-  signIn(credentials: Credentials): Observable<boolean> {
-    const success = Math.random() > 0.5;
-    const response = success ? of(true) : of(true);
-    return timer(2000).pipe(switchMap(() => response));
-  }
-
-  login(credentials): Observable<any> {
+  login(email: string, password:string): Observable<any> {
+   
     return this.http.post(environment.api_url + '/api/auth/signin', {
-      username: credentials.username,
-      password: credentials.password
+      username: email,
+      password: password
     }, httpOptions);
   }
   
@@ -37,4 +34,9 @@ export class AuthService {
         password: password
       }, httpOptions);
   }
+
+  updatePassword(){}
+
+  
+
 }

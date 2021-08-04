@@ -1,0 +1,15 @@
+.home-container {
+   
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+  .home-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-sidenav {
+    padding: 20px;
+  }

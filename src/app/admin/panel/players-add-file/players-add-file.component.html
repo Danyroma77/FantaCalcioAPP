@@ -1,0 +1,41 @@
+<h4 mat-dialog-title>Calciatori - Import del File</h4>
+
+
+<div class="status-box" [ngSwitch]="status">
+    <mat-spinner *ngSwitchCase="'pending'" [diameter]="20"></mat-spinner>
+    <div *ngSwitchCase="'error'" class="status">
+
+        <form [formGroup]="fAddCSV" (ngSubmit)="saveFile()">
+            <input #csvInput hidden="true" type="file" 
+                onclick="this.value=null" (change)="csvInputChange($event)" accept=".csv"/>
+            <button mat-flat-button color="primary" type="button" 
+                (click)="csvInput.click()">Seleziona un file da importare (CSV)</button>   
+            
+       
+        <mat-form-field
+            appearance="fill" floatLabel="always">
+                <mat-label>File Selezionato</mat-label>
+                <input matInput formControlName="nameFile" type="text" 
+                [ngModel]="fileName?.name" readonly />
+        </mat-form-field>
+            
+            
+            <button mat-raised-button color="primary" [disabled]="fAddCSV.invalid">Salva</button>
+        
+        </form>
+    <div *ngSwitchCase="'success'" class="status success">
+        Attenzione non è possibile caricare il database, ci sono voti inseriti per i giocatori.
+    </div>
+  </div>
+
+
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Chiudi</button>
+</mat-dialog-actions>
+
+<div class="status-box" [ngSwitch]="statusUpload">
+    <mat-spinner *ngSwitchCase="'pending'" [diameter]="20"></mat-spinner>
+    <div *ngSwitchCase="'error'" class="status error">{{messageUpload}}</div>
+    <div *ngSwitchCase="'success'" class="status success">{{messageUpload}}</div>
+  </div>
+

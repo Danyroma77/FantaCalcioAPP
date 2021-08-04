@@ -1,0 +1,91 @@
+<mat-drawer-container class="home-container" autosize>
+    <mat-drawer #drawer class="home-sidenav" mode="side" opened>
+  
+  
+      <button mat-button routerLink="/landing">
+        <mat-icon>home</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-button (click)="logout()">Logout</button>
+      <mat-divider></mat-divider>
+    </mat-drawer>
+  
+<mat-card>
+    Il tuo Profilo: 
+<mat-divider></mat-divider>
+   <h4> Dati Login:</h4> 
+    <form [formGroup]="fprofile" (ngSubmit)="saveChangePwd()">
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Email</mat-label>
+            <input type="text" formArrayName="email" matInput readonly>
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Password</mat-label>
+            <input
+              formControlName="password"
+              matInput
+              [type]="isPasswordVisible ? 'text' : 'password'"
+            />
+           
+            <button
+              type="button"
+              mat-icon-button
+              matSuffix
+              (click)="toggleVisibility()"
+              tabindex="-1"
+            >
+              <mat-icon *ngIf="isPasswordVisible">visibility</mat-icon>
+              <mat-icon *ngIf="!isPasswordVisible">visibility_off</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Ripeti Password</mat-label>
+            <input
+              formControlName="passwordRepeat"
+              matInput
+              [type]="isPasswordVisible ? 'text' : 'password'"
+              [errorStateMatcher]="matcher"
+            />
+            <mat-error *ngIf="fprofile.hasError('equalFields')">
+             Le <strong>Password</strong> non corrispondono.
+            </mat-error>
+            <button
+              type="button"
+              mat-icon-button
+              matSuffix
+              (click)="toggleVisibility()"
+              tabindex="-1"
+            >
+              <mat-icon *ngIf="isPasswordVisible">visibility</mat-icon>
+              <mat-icon *ngIf="!isPasswordVisible">visibility_off</mat-icon>
+            </button>
+          </mat-form-field>        
+          <button mat-raised-button color="primary" [disabled]="fprofile.invalid">Salva</button>
+    </form>
+<mat-divider></mat-divider>
+    <h4>Dati Personali:</h4>
+    <form [formGroup]="fdetails" (ngSubmit)="updateProfile()">
+
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Nome</mat-label>
+            <input type="text" formArrayName="name" matInput >
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Città</mat-label>
+            <input type="text" formArrayName="city" matInput >
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Nome di Default per le tue Squadre</mat-label>
+            <input type="text" formArrayName="defaultNameTeam" matInput >
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Immagine Profilo</mat-label>
+            <input type="text" formArrayName="urlImage" matInput >
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="fdetails.invalid">Salva</button>
+    </form>
+</mat-card>
+      
+    
+  
+  </mat-drawer-container>

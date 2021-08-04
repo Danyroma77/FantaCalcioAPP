@@ -1,4 +1,4 @@
-<form #form="ngForm" (ngSubmit)="form.valid && onSubmit()">
+<form [formGroup]="formLogin" (ngSubmit)="onSubmit()">
     <mat-form-field appearance="fill" floatLabel="always">
       <mat-label>Email</mat-label>
       <mat-icon
@@ -8,15 +8,9 @@
         >person</mat-icon
       >
       <input
-        ngModel
-        name="email"
-        type="text"
-        matInput
-        email
-        required
-        #emailControl="ngModel"
+        formControlName="email" type="text" matInput required
       />
-      <mat-error *ngIf="emailControl.hasError('email')">
+      <mat-error *ngIf="formLogin.get('email').hasError('required')">
         Inserisci una email Valida
       </mat-error>
     </mat-form-field>
@@ -29,8 +23,7 @@
         >lock</mat-icon
       >
       <input
-        ngModel
-        name="password"
+        formControlName="password"
         matInput
         required
         [type]="isPasswordVisible ? 'text' : 'password'"

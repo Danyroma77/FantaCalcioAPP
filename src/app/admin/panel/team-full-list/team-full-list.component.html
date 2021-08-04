@@ -1,0 +1,28 @@
+<h4 mat-dialog-title>Teams - Lista completa</h4>
+
+<table mat-table [dataSource]="teamInfo$">
+
+    <ng-container matColumnDef="index">
+        <th mat-header-cell *matHeaderCellDef> #ID </th>
+        <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Nome </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="status">
+        <th mat-header-cell *matHeaderCellDef> stato </th>
+        <td mat-cell *matCellDef="let element" [ngSwitch]="element.status">
+            <div *ngSwitchCase="1">Attiva
+            </div>
+            <div *ngSwitchCase="0">Disattivata
+            </div>
+            
+             </td>
+    </ng-container>
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>

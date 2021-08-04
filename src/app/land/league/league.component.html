@@ -1,1 +1,12 @@
-<p>league works!</p>
+<mat-card class="matcard">
+    <mat-card-header>Leghe</mat-card-header>
+    
+    <mat-card-footer>
+
+            <button mat-raised-button class="btn-submit" color="primary"
+            [disabled]="!seasonInfo$" (click)="openNewLeague()" >Crea Lega</button>
+            <button mat-raised-button class="btn-submit" color="accent"
+            [disabled]="!seasonInfo$">Cerca Lega</button>
+    </mat-card-footer>
+</mat-card>
+<mat-divider></mat-divider>

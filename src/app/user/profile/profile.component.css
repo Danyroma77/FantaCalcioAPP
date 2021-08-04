@@ -1,0 +1,49 @@
+mat-form-field {
+  display: block;
+  margin-bottom: 5px;
+  width:75%;
+}
+
+
+.home-container {
+   
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: max-content;
+  }
+  
+  .home-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-sidenav {
+    padding: 20px;
+    height:min-content;
+  }
+
+  
+  .status-box {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .status {
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .error {
+    background: orange;
+  }
+  .success {
+    background: lightgreen;
+  }
+  mat-spinner {
+    margin: auto;
+  }
+  

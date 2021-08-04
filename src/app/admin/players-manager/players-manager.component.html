@@ -1,0 +1,48 @@
+<mat-card class="matstandard">
+    <mat-card-header>Gestione Giocatori</mat-card-header>
+
+    <button color="primary" class="btn-submit" mat-raised-button
+     (click)="openAddSingle()" [disabled]="!seasonInfo$" >+ Nuovo Calciatore</button>
+    <button color="accent" class="btn-submit" mat-raised-button 
+     (click)="openAddFile()" [disabled]="!seasonInfo$">+ Caricamento Multiplo</button>
+
+    <table mat-table [dataSource]="playersListy$" >
+        <ng-container matColumnDef="index">
+            <th mat-header-cell *matHeaderCellDef> #Order </th>
+            <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef > Giocatore </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="roleplayers">
+            <th mat-header-cell *matHeaderCellDef > Ruolo </th>
+            <td mat-cell *matCellDef="let element"> {{element.rolePlayerID }} </td>
+        </ng-container>
+        <ng-container matColumnDef="idapp">
+            <th mat-header-cell *matHeaderCellDef > idGame </th>
+            <td mat-cell *matCellDef="let element"> {{element.orderID }} </td>
+        </ng-container>
+        <ng-container matColumnDef="team">
+            <th mat-header-cell *matHeaderCellDef > Squadra </th>
+            <td mat-cell *matCellDef="let element"> {{element.teamID}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="function">
+            <th mat-header-cell *matHeaderCellDef> Funzioni </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-raised-button color="accent" (click)="updateElement(element)">Aggiorna</button>
+                <button mat-raised-button color="warn" (click)="gradesManager(element)">Voti</button>
+                <button mat-raised-button color="basic" (click)="statistics(element)">Statistiche</button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <div (click)="scrollToTop()" class="scroll-to-top" *ngIf="pageYoffset > 0" >
+        <img src="assets\ontop.png" alt="Go on Top" width="64px">
+     </div>
+</mat-card>

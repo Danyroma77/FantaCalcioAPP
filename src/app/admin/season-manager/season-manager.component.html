@@ -1,0 +1,63 @@
+<mat-card class="matseason">
+    <h5 mat-card-header> Gestione delle Stagioni</h5>
+
+    <h6>Stagioni in Archivio</h6>
+    <mat-card-content>
+        <div *ngIf="seasonInfo$">
+            <table mat-table [dataSource]="seasonInfo$">
+                <!-- Index Column -->
+                <ng-container matColumnDef="index">
+                    <th mat-header-cell *matHeaderCellDef> #ID </th>
+                    <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+                </ng-container>
+                <ng-container matColumnDef="description">
+                    <th mat-header-cell *matHeaderCellDef> Nome </th>
+                    <td mat-cell *matCellDef="let element"> <b>{{element.description}}</b> </td>
+                </ng-container>
+
+                <ng-container matColumnDef="status">
+                    <th mat-header-cell *matHeaderCellDef> Stato </th>
+                    <td mat-cell *matCellDef="let element" [ngSwitch]="element.status">
+                        <div *ngSwitchCase="1">Attiva
+                            <button mat-raised-button color="warn" (click)="changeStatus(element,1)">Disabilita</button>
+                        </div>
+                        <div *ngSwitchCase="0">Disattivata
+                            <button mat-raised-button color="accent" (click)="changeStatus(element,0)">Abilita</button>
+                        </div>
+                        <div *ngSwitchCase="2">Terminata</div>
+
+                </ng-container>
+
+                <ng-container matColumnDef="dateStart">
+                    <th mat-header-cell *matHeaderCellDef> Data Inizio </th>
+                    <td mat-cell *matCellDef="let element"> {{element.dateStart | date}} </td>
+                </ng-container>
+
+                <ng-container matColumnDef="dateEnd">
+                    <th mat-header-cell *matHeaderCellDef> Data Fine </th>
+                    <td mat-cell *matCellDef="let element"> {{element.dateEnd | date}} </td>
+                </ng-container>
+                <ng-container matColumnDef="funzioni">
+                    <th mat-header-cell *matHeaderCellDef>Attività</th>
+                    <td mat-cell *matCellDef="let element">
+                        <button mat-raised-button color="primary" [disabled]="!element.status" (click)="editSeason(element)">Modifica</button>
+                        <br>
+                        <button mat-raised-button color="basic" [disabled]="!element.status" (click)="openDialog()">Calendario da File</button>
+                        <br>
+                        <button mat-raised-button color="basic" [disabled]="!element.status" (click)="openCalendar()">Gestisci Calendario</button>
+                    </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+            </table>
+        </div>
+        <div *ngIf="!seasonInfo$">
+            Nessuna stagione Attiva.
+            <button mat-flat-button color="primary" (click)="openDialog()">Inserisci</button>
+        </div>       
+
+    </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,51 @@
+<mat-card class="matteams">
+    <mat-card-header>Gestione Squadre - Serie A</mat-card-header>
+
+    <button color="primary" class="btn-submit" mat-raised-button (click)="addTeam()">+ Nuova</button>
+    <button color="warn" class="btn-submit" mat-raised-button (click)="fullListView()">
+        Lista Completa</button>
+    <h5>Squadre Attive</h5>
+    <table mat-table [dataSource]="teamActive$">
+
+        <ng-container matColumnDef="index">
+            <th mat-header-cell *matHeaderCellDef> #Order </th>
+            <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+        </ng-container>
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="function">
+            <th mat-header-cell *matHeaderCellDef> Funzioni </th>
+            <td mat-cell *matCellDef="let element">
+
+                <button mat-raised-button color="accent" (click)="disable(element)">Disabilita</button> </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <h5>Squadre non Attive</h5>
+    <table mat-table [dataSource]="teamNoActive$">
+
+        <ng-container matColumnDef="index">
+            <th mat-header-cell *matHeaderCellDef> #Order </th>
+            <td mat-cell *matCellDef="let index = index"> {{index+1}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Nome </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="function">
+            <th mat-header-cell *matHeaderCellDef> Funzioni </th>
+            <td mat-cell *matCellDef="let element">
+                <button mat-raised-button color="wanr" (click)="able(element)">Abilita</button> </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+</mat-card>

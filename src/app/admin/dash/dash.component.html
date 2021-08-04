@@ -1,0 +1,29 @@
+<mat-drawer-container class="home-container" autosize>
+    <mat-drawer #drawer class="home-sidenav" mode="side" opened>
+        <a href="#" mat-raised-button color="primary" routerLink='/landing'>Home</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-raised-button color="primary" routerLink="seasonManager">Stagioni</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="playersManager">Giocatori</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="teamsManager">Squadre</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="grades">Voti</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="bonusmalus">Bonus/Malus</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="userManager">Utenti</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="logApp">Log</a>
+        <mat-divider></mat-divider>
+        <a href="#" mat-flat-button color="primary" routerLink="msgAdmin">Messaggi</a>
+        <mat-divider></mat-divider>
+    </mat-drawer>
+
+
+    <h4>Admin Section</h4>
+    <!--     Corpo della sezione-->
+    <router-outlet></router-outlet>
+
+
+</mat-drawer-container>

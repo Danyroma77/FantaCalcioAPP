@@ -1,0 +1,23 @@
+  <mat-drawer-container class="home-container" autosize>
+    <mat-drawer #drawer class="home-sidenav" mode="side" opened>
+
+
+      <button mat-button routerLink="landing">
+        <mat-icon>home</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+      <button mat-button routerLink="/profile">Profilo</button>
+      <mat-divider></mat-divider>
+      <button mat-button routerLink="/dashGame">Gioco</button>
+      <mat-divider></mat-divider>
+      <button mat-button routerLink="/dashAdmin" *ngIf="showAdminBoard">Admin</button>
+      <mat-divider></mat-divider>
+      <button mat-button (click)="logout()">Logout</button>
+      <mat-divider></mat-divider>
+    </mat-drawer>
+
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+
+  </mat-drawer-container>

@@ -1,0 +1,41 @@
+
+<h4 mat-dialog-title>Calciatori - Aggiunta di un singolo giocatore</h4>
+
+<form [formGroup]="fPlayer" (ngSubmit)="save()">
+    
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Order ID</mat-label>
+            <input matInput formControlName="orderID" type="number" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="name" type="text" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Team</mat-label>
+            <mat-select formControlName="teamID">
+                <mat-option *ngFor="let team of teamActive$; let i=index" [value]="team.name">
+                    {{team.name}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Quotas</mat-label>
+            <input matInput formControlName="quotas" type="number" />
+        </mat-form-field>
+        <mat-form-field appearance="fill" floatLabel="always">
+            <mat-label>Ruolo</mat-label>
+            <mat-select formControlName="roleplayersID" >
+                <mat-option *ngFor="let rp of rolePlayerList$; let i = index" [value]="rp.name">
+                  {{rp.name}}
+                </mat-option>
+              </mat-select>
+        </mat-form-field>
+        <button mat-raised-button color="primary" [disabled]="fPlayer.invalid">Salva</button>
+     
+</form>
+
+
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Chiudi</button>
+</mat-dialog-actions>

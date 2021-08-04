@@ -1,1 +1,14 @@
-<p>admin works!</p>
+<mat-card class="matcard">
+    <mat-card-header>Admin Dashboard</mat-card-header>
+    <mat-card-content>
+        <div *ngIf="seasonInfo$">
+            <i>{{seasonInfo$.description}}</i><br>
+            Data Inizio {{seasonInfo$.dateStart | date}} Data Fine {{seasonInfo$.dateEnd | date}}
+        </div>
+        <div *ngIf="!seasonInfo$">
+            Nessuna stagione Attiva.
+            <button mat-flat-button color="primary" (click)="openDialog()">Inserisci</button>
+        </div>
+    </mat-card-content>
+</mat-card>
+<mat-divider></mat-divider>

@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+
+
+.btn-submit {
+    width: 100%;
+    margin: auto;
+  }
+
+  .scroll-to-top{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+  }

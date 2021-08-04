@@ -1,0 +1,40 @@
+<h4 mat-dialog-title>Calciatori - Inserimento multiplo</h4>
+
+
+<div class="status-box" [ngSwitch]="status">
+    <mat-spinner *ngSwitchCase="'pending'" [diameter]="20"></mat-spinner>
+    <div *ngSwitchCase="'error'" class="status">
+
+        <form [formGroup]="fAddCSV" (ngSubmit)="saveFile()">
+
+            <input #csvInput hidden="true" type="file" 
+            onclick="this.value=null" (change)="csvInputChange($event)" accept=".txt"/>
+        <button mat-flat-button color="primary" type="button" 
+            (click)="csvInput.click()">Seleziona un file da caricare (TXT)</button>   
+     
+
+            <mat-form-field appearance="fill" floatLabel="always">
+                <mat-label>Inserisci i giocatori da inserire</mat-label>
+                <textarea matInput formControlName="listElement" type="text" cols="18" rows="25"
+                [(ngModel)]="fileContent" ></textarea>
+            </mat-form-field>
+
+
+            <button mat-raised-button color="primary" [disabled]="fAddCSV.invalid">Salva</button>
+
+        </form>
+        <div *ngSwitchCase="'success'" class="status success">
+            Attenzione non è possibile caricare il database, ci sono voti inseriti per i giocatori.
+        </div>
+    </div>
+
+    <mat-dialog-actions>
+        <button mat-button mat-dialog-close>Chiudi</button>
+    </mat-dialog-actions>
+    
+    <div class="status-box" [ngSwitch]="statusUpload">
+        <mat-spinner *ngSwitchCase="'pending'" [diameter]="20"></mat-spinner>
+        <div *ngSwitchCase="'error'" class="status error">{{messageUpload}}</div>
+        <div *ngSwitchCase="'success'" class="status success">{{messageUpload}}</div>
+      </div>
+    
